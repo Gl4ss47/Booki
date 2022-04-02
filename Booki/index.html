@@ -11,7 +11,7 @@
     
 </head>
  <body>
-   <main class="container">
+   
     <!--header-->
     <header>
         <div id="logo">
@@ -20,26 +20,26 @@
             </a>
         </div>
         <nav>
-            <div>
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+            <div class="nav_bar">
+                <a href="#hebergement" class="nav_lien1">Hébergements</a>
+                <a href="#activité">Activités</a>
             </div>
-        </nav>
-        
-        
+        </nav>   
     </header>
     <!--titre-->
-    <div>
+  <main class="container">
+    <div class="Titre">
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         
     </div>
     <!--recherche-->
-    <div>
+    <div class="recherche">
         <form> 
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" name="text" class="search" placeholder="Rechercher">
-            <input type="submit" name="submit" class="submit" value="Rechercher">
+            <button class="recherche_mot">Rechercher</button>
+            <button class="recherche_loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
     <!--filtres-->
@@ -49,20 +49,28 @@
         </div>
         <div class="liste_filtres">
             <div class="filtre_bouton">
+                <a href="#">
                 <div class="icon_circle"><i class="fa-solid fa-money-bill-wave"></i></div>
-                <p><a href="#">Économique</a></p>
+                <p>Économique</p>
+                </a>
             </div>
             <div class="filtre_bouton">
+                <a href="#">
                 <div class="icon_circle"><i class="fa-solid fa-child-reaching"></i></div>
-                <p><a href="#">Familial</a></p>
+                <p>Familial</p>
+                </a>
             </div>
             <div class="filtre_bouton">
+                <a href="#">
                 <div class="icon_circle"><i class="fa-solid fa-heart"></i></div>
-                <p><a href="#">Romantique</a></p>
+                <p>Romantique</p>
+                </a>
             </div>
             <div class="filtre_bouton">
+                <a href="#">
                 <div class="icon_circle"><i class="fa-solid fa-dog"></i></div>
-                <p><a href="#">Animaux authorisés</a></p>
+                <p>Animaux authorisés</p>
+                </a>
             </div>
         </div>
     </div>
@@ -242,33 +250,45 @@
     <div id="activité">
         <h2>Activités à Marseille</h2>
         <div class="activité_box">
-            <div class="activité_card_1">
-            <img class="image_1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activité_1">                
-            <div class="activité_titre"><h3>Vieux Port</h3></div>
-            </div>
-            <div class="activité_card_2">
+            <a href="#">
+                <div class="activité_card_1">
+                <img class="image_1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activité_1">                
+                <div class="activité_titre"><h3>Vieux Port</h3></div>
+                </div>
+            </a>
+                <div class="activité_card_2">
+                    <a href="#">
                 <div class="activité_card_2-1">
                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activité_2-1">
-                 <div class="activité_titre"><h3>Fort de Pomègues</h3></div>
+                <div class="activité_titre"><h3>Fort de Pomègues</h3></div>
                 </div>
+                    </a>
+                <a href="#">
                 <div class="activité_card_2-2">
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activité_2-2">
-                 <div class="activité_titre"><h3>Îles du Frioul</h3></div>
+                <div class="activité_titre"><h3>Îles du Frioul</h3></div>
                 </div>
-            </div>
+                </a>
+                </div>
+                <a href="#">
             <div class="activité_card_3">
                 <img class="image_1" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activité_3">
                  <div class="activité_titre"><h3>Parc National des Calanques</h3></div>
             </div>
+                </a>
             <div class="activité_card_4">
+                <a href="#">
                 <div class="activité_card_4-1">
                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activité_4-1">
                  <div class="activité_titre"><h3>Notre-Dame-de-la-Garde</h3></div>
                 </div>
+                </a>
+                <a href="#">
                 <div class="activité_card_4-2">
                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activité_4-2">
                  <div class="activité_titre"><h3>Parc Longchamp</h3></div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
