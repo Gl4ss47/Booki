@@ -3,7 +3,7 @@
     src: url('static/Raleway-Regular.ttf');
 }
 *{
-    font-family: 'Raleway', Arial, Verdana, sans-serif;    
+    font-family: 'Raleway', Arial, sans-serif;    
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
@@ -140,23 +140,19 @@ button{
     background-color: rgb(0, 101, 252);
 }
 /*info*/
-.nombre_logement{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.icon_info{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border: 1px solid rgb(242, 242, 242);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+.nombre_logement .fa-solid{
     color: rgb(0, 101, 252);
+    font-size: 14px;
+    padding: 5px 9px 5px 9px;
+    border: solid 1px rgb(242, 242, 242);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+.nombre_logement p {
+    display: inline;
+  }
+.nombre_logement{
+    margin-bottom: 50px;
 }
 /*hebergement*/
 
@@ -187,7 +183,7 @@ button{
     max-width: 900px;
     margin-right: 50px;
 }
-.hebergement_marseille h1{
+.hebergement_marseille h2{
     font-size: 24px;
 }
 .proposition{
@@ -202,7 +198,7 @@ button{
     border: 1px solid rgb(242, 242, 242);
     border-radius: 20px;
     padding: 2.25% 2.25% 2.5% 2.25%;
-    margin: 1.4% 1.4% 40px 1.4%;
+    margin: 1.4% 1.4% 0% 1.4%;
     width: 247px;
 }
 .photo_hebergement{
@@ -233,6 +229,7 @@ button{
 .hebergement_marseille a{
     color: black;
     text-decoration: none;
+    margin-bottom: 40px;
 }
 .contenu h3{
     margin: 5px 0px 5px 10px;
@@ -287,7 +284,7 @@ button{
     color: black;
     text-decoration: none;
 }
-.populaire h1{
+.populaire h2{
     font-size: 24px;
 }
 .populaire{
@@ -451,7 +448,8 @@ nav a:hover{
     display: none;
 }
 form{
-    width: 400px;
+    width: auto;
+    border: none;
 }
 .fa-location-dot{
     width: 60px;
@@ -463,8 +461,8 @@ form{
     border: none;
 }
 .search{
-    border: none;
-    width: 300px;
+    border: 1px solid rgb(242, 242, 242);
+    max-width: 300px;
 }
 /**filtre**/
 #filtres{
@@ -476,44 +474,70 @@ form{
     flex-direction: column-reverse;
     width: 100%;
 }
-.populaire{
-    border-radius: 0;
-    width: 500px;
-    margin-bottom: 50px;
-}
 .hebergement_marseille{
     margin-right: 0px;
     background-color: rgb(255, 255, 255);
 }
 .proposition{
     flex-direction: column;
+    width: 95%;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 .box{
-    width: 500px;
-    margin: 0px 0px 40px 0px;
+    width: 100%;
+    padding: 0;
 }
 .photo_hebergement{
     width: 100%;
     margin: 0px;
 }
+.afficher_plus h2{
+    font-size: 18px;
+
+}
+/**Populaire**/
+.box_populaire{
+    align-items: flex-start;
+    width: 70%;
+    box-sizing: content-box;
+}
+.populaire{
+    border-radius: 0;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.populaire a{
+    display: flex;
+    justify-content: center;
+}
+.hebergement_populaire{
+    width: 100%;
+}
+.image_populaire{
+    width: 40%;
+}
 /**activité**/
 .activité_box{
     flex-direction: column;
-    align-items: center;
+    margin-left: 5%;
+}
+#activité a {
+    width: 95%;
 }
 #activité h2{
     margin-left: 50px;
 }
 .activité_card_1,.activité_card_3{
-    width: 500px;
+    width: 100%;
     margin-bottom: 25px;
     height: 200px;
 }
 .activité_card_2,.activité_card_4{
-    width: 500px;
+    width: 100%;
 }
 .activité_card_2-1, .activité_card_2-2, .activité_card_4-1, .activité_card_4-2{
-    width: 500px;
+    width: 100%;
     margin-bottom: 25px;
     height: 200px;
 }
@@ -521,12 +545,13 @@ form{
 footer{
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 footer h2,li{
     margin-left: 25px;
 }
 }
-@media (max-width: 991px)
+@media (min-width: 768px) and (max-width: 991px)
 {
 /**hebergement**/
 #hebergement{
@@ -576,5 +601,23 @@ footer h2{
 }
 footer ul{
     padding-left: 0px;
+}
+}
+@media (min-width: 992px) and (max-width: 1440px)
+{
+.activité_card_1, .activité_card_3{
+    width: 100%;
+}
+.activité_box a{
+    width: 21%;
+}
+.activité_card_2, .activité_card_4{
+    width: 21%;
+}
+.activité_card_2 a, .activité_card_4 a{
+    width: 100%;
+}
+.activité_card_2-1{
+    width: 100%;
 }
 }
